@@ -294,7 +294,7 @@ namespace HSR.NPRShader.Passes
                     colorTargetHandle = m_BloomCharacterColor;
                 }
 
-                CoreUtils.SetKeyword(material, ShaderKeywordStrings.UseRGBM, m_UseRGBM);
+                // CoreUtils.SetKeyword(material, ShaderKeywordStrings.UseRGBM, m_UseRGBM);
 
                 cmd.SetGlobalFloat(PropertyIds._BloomThreshold, m_BloomConfig.Threshold.value);
                 cmd.SetGlobalVectorArray(PropertyIds._BloomUVMinMax, m_BloomAtlasUVMinMax);
